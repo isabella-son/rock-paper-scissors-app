@@ -1,0 +1,20 @@
+body {
+    background-color: #CCC;
+}
+
+.selections {
+    display: flex; 
+    justify-content: center;
+}
+
+.selection {
+    background: none; 
+    border: none; 
+    outline: none; 
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
