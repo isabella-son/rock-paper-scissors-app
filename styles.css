@@ -1,10 +1,13 @@
 body {
-    background-color: #CCC;
+    background-color: rgb(153, 225, 239);
+    font-family: sans-serif;
 }
 
 .selections {
     display: flex; 
     justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .selection {
@@ -13,8 +16,51 @@ body {
     outline: none; 
     cursor: pointer;
     font-size: 2rem;
-}
+    transition: 100ms;
+}   
 
 .selection:hover {
     transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.score-row {
+  display: flex;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.results-columns {
+  display: flex;
+  gap: 3rem;
+}
+
+.results-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-selection {
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 2rem;
+}
+
+.results-score {
+    margin-left:.1rem;
+    font-size: .5rem;
+    color: rgb(9, 24, 193);
+
 }
